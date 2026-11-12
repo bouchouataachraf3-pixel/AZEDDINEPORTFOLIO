@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The portfolio of Azeddine Chakir, a student and aspiring developer at FST Settat.">
+    <title>Azeddine Chakir | Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='/style.css') }}">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Main navigation">
+            <a href="#home" class="logo" aria-label="Azeddine Chakir home">AC<span>.</span></a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
+                <span class="sr-only">Toggle navigation</span>
+                <span></span><span></span><span></span>
+            </button>
+            <ul id="primary-menu" class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero section">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <span class="eyebrow"><span class="status-dot"></span> Welcome to my portfolio</span>
+                    <h1>Hello, I'm <span>Azeddine Chakir</span></h1>
+                    <h2>Student &amp; Future Developer</h2>
+                    <p>I love technology, programming and creating modern digital experiences.</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="button">Explore my work <span aria-hidden="true">↗</span></a>
+                        <a href="#contact" class="button button-outline">Contact me</a>
+                    </div>
+                </div>
+                <a class="portrait" href="#profile" aria-label="Discover Azeddine Chakir's profile">
+                    <span class="portrait-orbit"></span>
+                    <span class="portrait-initials">AC<span>.</span></span>
+                    <span class="portrait-caption">Curious mind. Creative builder.</span>
+                </a>
+            </div>
+            <a class="scroll-hint" href="#about">Scroll to explore <span aria-hidden="true">↓</span></a>
+        </section>
+
+        <section id="about" class="section section-muted">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">A little introduction</span>
+                    <h2>About <span>me</span></h2>
+                </div>
+                <div class="about-grid">
+                    <p class="about-copy">I'm a student at FST Settat, passionate about technology, programming and innovation. I enjoy exploring new technologies, building creative projects and developing my skills. My goal is to become a skilled developer and turn ideas into real-world solutions.</p>
+                    <div class="stats-grid" aria-label="Portfolio highlights">
+                        <div class="stat-card"><strong>05</strong><span>Technologies</span></div>
+                        <div class="stat-card"><strong>03</strong><span>Project ideas</span></div>
+                        <div class="stat-card"><strong>01</strong><span>Portfolio website</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="profile" class="section">
+            <div class="container profile-panel">
+                <div class="profile-mark" aria-hidden="true">AC<span>.</span></div>
+                <div>
+                    <span class="eyebrow">The person behind the code</span>
+                    <h2>My <span>profile</span></h2>
+                    <p>I'm Azeddine Chakir, a student at FST Settat who enjoys learning by building. I'm currently growing my skills in web development and Python, and I'm always open to discovering new ideas and collaborating on meaningful projects.</p>
+                    <a class="text-link" href="#contact">Let’s connect <span aria-hidden="true">→</span></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section section-muted">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">Always learning</span>
+                    <h2>My <span>skills</span></h2>
+                    <p>Technologies I'm learning and exploring.</p>
+                </div>
+                <div class="card-grid skills-grid">
+                    <article class="info-card"><span class="card-number">01</span><h3>HTML</h3><p>Web structure</p></article>
+                    <article class="info-card"><span class="card-number">02</span><h3>CSS</h3><p>Web design</p></article>
+                    <article class="info-card"><span class="card-number">03</span><h3>JavaScript</h3><p>Web interaction</p></article>
+                    <article class="info-card"><span class="card-number">04</span><h3>Python</h3><p>Programming &amp; FastAPI backend development</p></article>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">Learning through practice</span>
+                    <h2>Selected <span>projects</span></h2>
+                    <p>Some projects I'm working on.</p>
+                </div>
+                <div class="card-grid projects-grid">
+                    <article class="project-card">
+                        <span class="project-label">01 / Web</span>
+                        <h3>Personal Portfolio</h3>
+                        <p>A personal website built with HTML, CSS and FastAPI.</p>
+                        <div class="tag-list"><span>HTML</span><span>CSS</span><span>Python</span></div>
+                    </article>
+                    <article class="project-card project-featured">
+                        <span class="project-label">02 / Simulation</span>
+                        <h3>Process Simulation — DWSIM &amp; Python</h3>
+                        <p>A technical project combining process simulation using DWSIM and Python programming.</p>
+                        <p class="supervisor">Supervised by Zine Elabidine Bakher</p>
+                        <div class="tag-list"><span>DWSIM</span><span>Python</span></div>
+                    </article>
+                    <article class="project-card">
+                        <span class="project-label">03 / Code</span>
+                        <h3>Python Projects</h3>
+                        <p>Small applications developed while learning Python.</p>
+                        <div class="tag-list"><span>Python</span></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <div class="container contact-content">
+                <span class="eyebrow">Have an idea?</span>
+                <h2>Let's make something <span>meaningful.</span></h2>
+                <p>Have a project or an opportunity? I'd love to hear from you.</p>
+                <a class="button" href="mailto:azzedinechakir2003@gmail.com">Send me an email <span aria-hidden="true">↗</span></a>
+                <a class="contact-email" href="mailto:azzedinechakir2003@gmail.com">azzedinechakir2003@gmail.com</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <a href="#home" class="logo">AC<span>.</span></a>
+            <p>© {{ year }} Azeddine Chakir Portfolio. All rights reserved.</p>
+            <a href="#home" class="back-to-top">Back to top ↑</a>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', path='/script.js') }}"></script>
+</body>
+
+</html>
